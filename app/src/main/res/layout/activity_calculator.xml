@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CalculatorActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:gravity="center|right"
+            android:id="@+id/calculatorScreen"
+            android:text="Hola"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation= "horizontal"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+
+        //style="?android:attr/borderlessButtonStyle"
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="operatorPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="M+"
+            android:onClick="operatorPressed"
+            android:textSize="20dp"
+            android:background="@drawable/color_button_mem"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="operatorPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="M-"
+            android:onClick="operatorPressed"
+            android:textSize="20dp"
+            android:background="@drawable/color_button_mem"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:onClick="operatorPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="MR"
+            android:onClick="operatorPressed"
+            android:textSize="20dp"
+            android:background="@drawable/color_button_mem"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:nestedScrollingEnabled="false"
+            android:onClick="pointPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:onClick="numberPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:onClick="equalPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="operatorPressed"
+            android:textSize="30dp"
+            android:background="@drawable/color_button_operator"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="MC"
+            android:onClick="operatorPressed"
+            android:textSize="20dp"
+            android:background="@drawable/color_button_mem"/>
+    </LinearLayout>
+
+</LinearLayout>
